@@ -24,6 +24,8 @@ public class Evaluation {
     private Date disableTime;
     @TableField(exist = false)
     private Book book;
+    @TableField(exist = false)
+    private Member member;
 
     public Member getMember() {
         return member;
@@ -33,8 +35,7 @@ public class Evaluation {
         this.member = member;
     }
 
-    @TableField(exist = false)
-    private Member member;
+
 
     public Book getBook() {
         return book;
